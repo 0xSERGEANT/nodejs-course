@@ -1,0 +1,38 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+[*.{js,mjs,cjs,ts}]
+block_comment_start = /*
+block_comment = *
+block_comment_end = */
+
+[*.{html,htm,ejs,css,scss,sass,less,json,jsonc,yml,yaml,svg,xml,xhtml,toml,ini,cfg,conf}]
+indent_style = space
+indent_size = 2
+
+[.env*]
+indent_style = space
+indent_size = 2
+
+[*.{md,rmd,mkd,mkdn,mdwn,mdown,markdown,litcoffee}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false
+
+[*.{sh,bash,zsh,fish}]
+indent_style = tab
+
+[{Dockerfile*,*.Dockerfile,*.dockerfile}]
+indent_style = tab
+
+[.github/workflows/*.{yml,yaml}]
+indent_style = space
+indent_size = 2
