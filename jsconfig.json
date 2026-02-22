@@ -10,7 +10,10 @@
     "baseUrl": ".",
     "paths": {
       "#/*": ["src/*"],
-      "#utils/*": ["src/utils/*"]
+      "#data/*": ["src/data/*"],
+      "#utils/*": ["src/utils/*"],
+      "#routes/*": ["src/routes/*"],
+      "#controllers/*": ["src/controllers/*"]
     }
   },
   "include": ["src/**/*.js"],

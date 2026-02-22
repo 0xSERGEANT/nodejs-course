@@ -13,10 +13,14 @@
   },
   "imports": {
     "#/*": "./src/*",
-    "#utils/*": "./src/utils/*"
+    "#data/*": "./src/data/*",
+    "#utils/*": "./src/utils/*",
+    "#routes/*": "./src/routes/*",
+    "#controllers/*": "./src/controllers/*"
   },
   "dependencies": {
     "cors": "^2.8.6",
+    "ejs": "^4.0.1",
     "express": "^5.2.1",
     "helmet": "^8.1.0",
     "pino": "^10.3.1",
