@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Учасник бригади | <%= member.fullName %></title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="member-profile">
+      <h1><%= member.fullName %></h1>
+
+      <div class="member-info">
+        <p><strong>Група:</strong> <%= member.group %></p>
+        <p><strong>Номер команди:</strong> <%= member.teamNumber %></p>
+        <p><strong>Роль у проєкті:</strong> <%= member.role %></p>
+        <p><strong>Опис:</strong> <%= member.description %></p>
+      </div>
+    </main>
+  </body>
+</html>
