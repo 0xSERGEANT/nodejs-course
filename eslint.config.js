@@ -8,7 +8,14 @@ import configPrettier from 'eslint-config-prettier';
 
 export default [
 	{
-		ignores: ['node_modules/**', 'dist/**', 'build/**', 'coverage/**', '*.min.js', 'eslint.config.js'],
+		ignores: [
+			'node_modules/**',
+			'dist/**',
+			'build/**',
+			'coverage/**',
+			'*.min.js',
+			'eslint.config.js',
+		],
 	},
 
 	js.configs.recommended,
