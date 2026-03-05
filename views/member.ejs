@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Учасник бригади | <%= member.fullName %></title>
+    <title>Учасник | <%= member.name %></title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <main class="member-profile">
-      <h1><%= member.fullName %></h1>
+    <main class="team-container">
+      <h1 class="team-title">Картка учасника</h1>
 
-      <div class="member-info">
-        <p><strong>Група:</strong> <%= member.group %></p>
-        <p><strong>Номер команди:</strong> <%= member.teamNumber %></p>
-        <p><strong>Роль у проєкті:</strong> <%= member.role %></p>
-        <p><strong>Опис:</strong> <%= member.description %></p>
+      <div class="member-card">
+        <h2><%= member.name %></h2>
+
+        <div class="member-info" style="margin-top: 15px">
+          <p><strong>Номер команди:</strong> <%= member.teamNumber %></p>
+          <p><strong>Роль у проєкті:</strong> <%= member.role %></p>
+          <p><strong>Опис обов'язків:</strong> <%= member.description %></p>
+        </div>
       </div>
+
+      <br />
+      <a href="/team" class="back-btn">Назад до команди</a>
     </main>
   </body>
 </html>

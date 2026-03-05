@@ -37,3 +37,85 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+body {
+  background-color: #4a148c;
+  color: #f3e5f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-title {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #e91e63;
+  padding-bottom: 10px;
+}
+
+.member-card {
+  background-color: #6a1b9a;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border-left: 6px solid #e91e63;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(233, 30, 99, 0.4);
+}
+
+.member-card h2 {
+  margin-top: 0;
+  color: #ff80ab;
+  font-size: 1.5rem;
+}
+
+.details-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #ff80ab;
+  border: 2px solid #ff80ab;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #ff80ab;
+  color: #4a148c;
+}
+
+.back-btn {
+  display: block;
+  width: 220px;
+  margin: 40px auto 0;
+  padding: 12px;
+  text-align: center;
+  background-color: #e91e63;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #c2185b;
+}

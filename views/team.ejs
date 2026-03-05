@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Наша команда</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="team-container">
+      <h1 class="team-title">Склад нашої бригади</h1>
+
+      <div class="members-list">
+        <% members.forEach(function(member) { %>
+        <div class="member-card">
+          <h2><%= member.name %></h2>
+          <p><strong>Роль:</strong> <%= member.role %></p>
+
+          <a href="/team/<%= member.id %>" class="details-btn">Детальніше</a>
+        </div>
+        <% }); %>
+      </div>
+
+      <br />
+      <a href="/index.html" class="back-btn">Назад на головну</a>
+    </main>
+  </body>
+</html>
