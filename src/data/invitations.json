@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "senderId": "1",
+    "receiverId": "2",
+    "status": "accepted"
+  },
+  {
+    "id": "2",
+    "senderId": "1",
+    "receiverId": "3",
+    "status": "pending"
+  },
+  {
+    "id": "3",
+    "senderId": "1",
+    "receiverId": "5",
+    "status": "rejected"
+  }
+]
