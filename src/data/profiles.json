@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "keywords": ["аніме", "метал", "подорожі", "покер"],
+    "publicInfo": { "name": "Олександр", "age": 20 },
+    "privateInfo": { "phone": "+380995437642", "email": "alexiiii_2006@gmail.com" }
+  },
+  {
+    "id": "2",
+    "keywords": ["мистецтво", "настільні ігри"],
+    "publicInfo": { "name": "Анастасія", "age": 25 },
+    "privateInfo": { "phone": "+380965984725", "email": "anastasunia@gmail.com" }
+  },
+  {
+    "id": "3",
+    "keywords": ["подорожі", "childfree", "pet parent"],
+    "publicInfo": { "name": "Наталі", "age": 30 },
+    "privateInfo": { "phone": "+380665204998", "email": "shevchuk_nata@gmail.com" }
+  },
+  {
+    "id": "4",
+    "keywords": ["астрологія", "література", "романтика", "мистецтво"],
+    "publicInfo": { "name": "Марія", "age": 26 },
+    "privateInfo": { "phone": "+380957405468", "email": "maria-astrolog@gmail.com" }
+  },
+  {
+    "id": "5",
+    "keywords": ["покер", "панк"],
+    "publicInfo": { "name": "Всеволод", "age": 25 },
+    "privateInfo": { "phone": "+380984562503", "email": "garbusikk@gmail.com" }
+  }
+]
