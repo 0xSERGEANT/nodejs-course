@@ -5,7 +5,6 @@ import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
 
-import teamRoutes from '#routes/team-routes.js';
 import logger from '#utils/logger.js';
 
 const __filename = url.fileURLToPath(import.meta.url);
@@ -21,7 +20,6 @@ app.use(helmet());
 app.use(cors());
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
-app.use(teamRoutes);
 
 app.listen(PORT, () => {
 	logger.info(`Server is running on http://localhost:${PORT}`);

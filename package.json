@@ -15,8 +15,11 @@
     "#/*": "./src/*",
     "#data/*": "./src/data/*",
     "#utils/*": "./src/utils/*",
+    "#models/*": "./src/models/*",
     "#routes/*": "./src/routes/*",
-    "#controllers/*": "./src/controllers/*"
+    "#services/*": "./src/services/*",
+    "#controllers/*": "./src/controllers/*",
+    "#repositories/*": "./src/repositories/*"
   },
   "dependencies": {
     "cors": "^2.8.6",
