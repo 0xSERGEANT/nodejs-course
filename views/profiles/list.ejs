@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <%- include('../partials/header', { title: 'Всі анкети' }) %>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('../partials/nav') %>
+
+      <h1>Всі анкети</h1>
+
+      <ul class="profile-list">
+        <% profiles.forEach(profile => { %>
+        <li class="profile-item">
+          <a href="/profiles/<%= profile.id %>">
+            <%= profile.publicInfo.name %>, <%= profile.publicInfo.age %> років
+          </a>
+          <div class="keywords">
+            <% profile.keywords.forEach(keyword => { %>
+            <span class="keyword-tag"><%= keyword %></span>
+            <% }) %>
+          </div>
+        </li>
+        <% }) %>
+      </ul>
+
+      <%- include('../partials/footer') %>
+    </div>
+  </body>
+</html>

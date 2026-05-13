@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <%- include('../partials/header', { title: 'Пошук анкет' }) %>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('../partials/nav') %>
+
+      <h1>Пошук за інтересами</h1>
+
+      <form action="/search" method="GET" class="search-form">
+        <input type="text" name="q" value="<%= query %>" placeholder="Введіть ключові слова..." />
+        <button type="submit">Шукати</button>
+      </form>
+
+      <h2>Результати:</h2>
+      <% if (results.length > 0) { %>
+      <ul class="profile-list">
+        <% results.forEach(profile => { %>
+        <li class="profile-item">
+          <a href="/profiles/<%= profile.id %>"><%= profile.publicInfo.name %></a>
+          <div class="keywords">
+            <% profile.keywords.forEach(k => { %>
+            <span class="keyword-tag"><%= k %></span>
+            <% }) %>
+          </div>
+        </li>
+        <% }) %>
+      </ul>
+      <% } else { %>
+      <p>Нічого не знайдено.</p>
+      <% } %> <%- include('../partials/footer') %>
+    </div>
+  </body>
+</html>
