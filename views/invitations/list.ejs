@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <%- include('../partials/header', { title: 'Мої запрошення' }) %>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('../partials/nav') %>
+
+      <h1>Ваші запити</h1>
+
+      <% if (invitations.length > 0) { %>
+      <div class="invitations-container">
+        <% invitations.forEach(inv => { %>
+        <div class="invitation-card">
+          <p>
+            <strong>ID:</strong> <%= inv.id %> | Статус:
+            <span class="status-<%= inv.status %>"><%= inv.status %></span>
+          </p>
+          <small>Від: <%= inv.senderId %> → Кому: <%= inv.receiverId %></small>
+        </div>
+        <% }) %>
+      </div>
+      <% } else { %>
+      <p>Запитів не знайдено.</p>
+      <% } %> <%- include('../partials/footer') %>
+    </div>
+  </body>
+</html>

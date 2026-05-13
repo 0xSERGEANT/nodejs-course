@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <%- include('../partials/header', { title: 'Анкета: ' + profile.publicInfo.name }) %>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('../partials/nav') %>
+
+      <div class="profile-detail">
+        <h1><%= profile.publicInfo.name %>, <%= profile.publicInfo.age %></h1>
+
+        <div class="keywords">
+          <strong>Інтереси:</strong>
+          <% profile.keywords.forEach(keyword => { %>
+          <span class="keyword-tag"><%= keyword %></span>
+          <% }) %>
+        </div>
+
+        <% if (profile.privateInfo) { %>
+        <div class="private-info-box">
+          <h2><span class="status-accepted">✔</span> Контактні дані:</h2>
+          <p><strong>Телефон:</strong> <%= profile.privateInfo.phone %></p>
+          <p><strong>Email:</strong> <%= profile.privateInfo.email %></p>
+        </div>
+        <% } else { %>
+        <p class="locked-message">🔒 Приватна інформація прихована. Взаємні запрошення не знайдено.</p>
+        <% } %>
+      </div>
+
+      <br />
+      <a href="/profiles">← Назад до списку</a>
+
+      <%- include('../partials/footer') %>
+    </div>
+  </body>
+</html>
